@@ -11,16 +11,18 @@ namespace UnityStandardAssets.Vehicles.Car{
     public class CmdVel : ROSBridgeSubscriber{
       public static ROSBridgeMsg in_msg;
       public InputField inputField;
-//      public Button button;
-      public bool start_flag;
+  //    public Button button;
+
+      string namsp = "no";
+      static bool start_flag = false;
       public static string command_topic;
       public static bool msg_flag;
       public static CarController m_Car; // the car controller we want to use
  //     GameObject car;
       //s = new Steering();
-      public new static string GetMessageTopic(){
+      public static string GetMessageTopic(){
 	Debug.LogWarning(command_topic);
-
+	start_flag = true;
 	return command_topic;
       }
       void Start(){
@@ -34,6 +36,7 @@ namespace UnityStandardAssets.Vehicles.Car{
 //	car = GameObject.Find("Car_obj(Clone)");
       }
  //     void TaskOnClick(){
+//	namsp = inputField.text;
 //	Debug.LogWarning("button pressed");
  //     }
       public new static string GetMessageType(){
@@ -54,7 +57,9 @@ namespace UnityStandardAssets.Vehicles.Car{
 	if(!isLocalPlayer){
 	  return;
 	}
+	if(!start_flag){
 	command_topic = string.Concat(inputField.text,"/cmd_vel");
+	}
 	if(!msg_flag){
 	  return;
 	}

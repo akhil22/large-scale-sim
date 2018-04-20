@@ -28,8 +28,7 @@ public class CamRos : NetworkBehaviour
 //	[SyncVar]
 	public InputField inputField;
 
-        [SyncVar]	
-	public string namsp = "no";
+	string namsp = "no";
 	
 	public Button button;
         CompressedImageMsg msg;
@@ -57,6 +56,7 @@ public class CamRos : NetworkBehaviour
 	    return;
 	  }
 	  start_flag = true;
+	  namsp = inputField.text;
 	  UnityEngine.Debug.LogWarning("Button Pressed");
 	}
    IEnumerator PubPosition(){
@@ -148,8 +148,8 @@ public class CamRos : NetworkBehaviour
              CompressedImageMsg msg = new CompressedImageMsg(new HeaderMsg(0, new TimeMsg(0,0),"cam"), "jpeg", image);
             // yield return new WaitForEndOfFrame();
              //ros.Publish(CompressedImageMsg.GetMessageTopic(), msg);
-	     string image_topic = string.Concat(inputField.text,"/image/compressed");
-	     namsp = inputField.text;
+	     string image_topic = string.Concat(namsp,"/image/compressed");
+	     UnityEngine.Debug.Log(image_topic);
              ros.Publish(image_topic, msg);
 	    // targetTexture = null;
 //	     texture2D = null;

@@ -30,5 +30,5 @@ A large Scale Simulation for Autonomous Driving based on Udacity's self driving 
   > roslaunch camera_info_pub lane_detection.launch ns:=/car2
 - Now run a new game instances(step 3). This time type /car2 in the input field and click on button above it.
 - Please note that you can control the car using keyboard if you just run the game instance without lane detection and path following(WASD control)
-- Also note that all the cars start at the same position so if you have to wait for the first car to move a littel bit before starting the second instance of the game :). This can be fixed later.
+- Also note that all the cars start at the same position so you have to wait for the first car to move a littel bit before starting the second instance of the game otherwise they will collide :). This can be fixed later.
 

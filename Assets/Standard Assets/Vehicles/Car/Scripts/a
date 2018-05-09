@@ -1,0 +1,5 @@
+/home/akhil/Desktop/large-scale-sim/Assets/Standard Assets/Vehicles/Car/Scripts
+/home/akhil/Desktop/large-scale-sim/Assets/Standard Assets/Vehicles/Car/Scripts
+alias lsim=cd /home/akhil/Desktop/large-scale-sim/Assets/Standard Assets/Vehicles/Car/Scripts
+alias lsim=cd `pwd`
+alias lsim=cd /home/akhil/Desktop/large-scale-sim/Assets/Standard Assets/Vehicles/Car/Scripts

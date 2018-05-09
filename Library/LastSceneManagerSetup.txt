@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/faster_cam.unity
+- path: Assets/new_track.unity
   isLoaded: 1
   isActive: 1

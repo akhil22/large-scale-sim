@@ -1,5 +1,5 @@
 # Large Scale Simulation
-
+A large Scale Simulation for Autonomous Driving based on Udacity's self driving car simulator and ROS
 
 
 
@@ -26,4 +26,9 @@
 - Run the game binary that we generated in the third step this will show a window to select resolution and graphics quality, please choose the appropriate resolution and graphics, on the next window click on LAN Host(H) button.
 - Next window will show a car on a track. In the input field you will see the process ID of the game, Delete it and type /car1 and hit the button above the input field.
 - The car should start following the right lane. Please ignore the first part of the track (bridge). I am still working on creating a better track.  
+- You can run more then one instances of the simulation, First the lane detection and path following for second instance under the name space /car2:
+  > roslaunch camera_info_pub lane_detection.launch ns:=/car2
+- Now run a new game instances(step 3). This time type /car2 in the input field and click on button above it.
+- Please note that you can control the car using keyboard if you just run the game instance without lane detection and path following(WASD control)
+- Also note that all the cars start at the same position so if you have to wait for the first car to move a littel bit before starting the second instance of the game :). This can be fixed later.
 

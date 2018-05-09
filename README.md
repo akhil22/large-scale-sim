@@ -23,7 +23,7 @@
   > roslaunch rosbridge_server rosbridge_websocket.launch
  - Run lane detection and path follower under namespace /car1:
    > roslaunch camera_info_pub lane_detection.launch ns:=/car1
-- Run the game binary that we generated in the third step choose the appropriate resolution and graphics. on the next window click on LAN Host(H) button.
+- Run the game binary that we generated in the third step this will show a window to select resolution and graphics quality, please choose the appropriate resolution and graphics, on the next window click on LAN Host(H) button.
 - Next window will show a car on a track. In the input field you will see the process ID of the game, Delete it and type /car1 and hit the button above the input field.
 - The car should start following the right lane. Please ignore the first par of the track (bridge). I am still working on creating a better track.  
 

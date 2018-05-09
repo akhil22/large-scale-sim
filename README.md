@@ -12,10 +12,10 @@
 - Run the following commands to install addtional ros packages:
   > sudo apt install ros-kinetic-rosbridge-server
  - Build the ros controller package:
-   > cd <path_to_catkin_ws>/src
-   > git clone https://github.com/akhil22/camera_info_pub.git
-   > cd <path_to_catkin_ws>
-   > catkin_make 
+   > cd <path_to_catkin_ws>/src  
+   > git clone https://github.com/akhil22/camera_info_pub.git  
+   > cd <path_to_catkin_ws>  
+   > catkin_make   
  - Now we have installed all the dependencies its time to run the simulation 
 
 # Running
